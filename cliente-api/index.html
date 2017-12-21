@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Freelancer - Start Bootstrap Theme</title>
+
+  
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script text="text/javascript" src="js/validacao.js"></script>
+  
+
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+
+    <link href="css/freelancer.min.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-1.2.6.pack.js">
+    </script><script type="text/javascript" src="js/jquery.maskedinput-1.1.4.pack.js"/></script>
+     
+  </head>
+
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Sistema Web </a>
+        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#cadastro">Cadastro</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#dados">Dados</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#relatorio">Relatório</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <header class="masthead bg-primary text-white text-center">
+      <div class="container">
+        <img class="img-fluid mb-5 d-block mx-auto" src="img/n.png" alt="">
+        <h1 class="text-uppercase mb-0">Start</h1>
+        <hr class="star-light">
+        <h2 class="font-weight-light mb-0">Bem Vindo ao sistema de cadastro</h2>
+      </div>
+    </header>
+
+  
+        <section id="cadastro">
+            <div class="container">
+              <h2 class="text-center text-uppercase text-secondary mb-0">Cadastre</h2>
+              <hr class="star-dark mb-5">
+              <div class="row">
+                <div class="col-lg-8 mx-auto">
+                  
+                  <form action="http://localhost/neppo/slim/api.php/cadastro" id="form" method="post" data-producto="0">
+               
+                    Nome:
+                    <input type="text" id="name_form" name="nome" class="form-control" size="50" placeholder="Nome Completo"  maxlength="50"/></br>
+           
+                    Data:
+                    <input type="date" id="data_form" name="data" class="form-control" placeholder="Ex.: dd/mm/aaaa" maxlength="10" autocomplete="off"/></br>  
+                                       
+                    CPF:
+                    <input class="form-control" type="text" id="cpf" name="cpf" value="cpf" placeholder="Digite o CPF" maxlength="11"> </br>
+                  
+                    SEXO:</br>
+                   
+                               
+                    <input type="radio" name="sexo" id="cMasc" value="MASCULINO" /> 
+                    <label for="sexo" class="control-label">Masculino</label>
+                   
+                    <input type="radio" name="sexo" id="cFem" value="FEMININO" />
+                    <label for="sexo" class="control-label">Feminino</label>
+                    </br>
+                    Endereço:
+                    <input type="text" id="endereco_form" placeholder="Digite seu endereço" name="endereco" class="form-control"/></br>
+           
+                   <input type="submit" value="Enviar"/>
+                 </form>
+                </div>
+              </div>
+            </div>
+          </section>
+
+    <!-- About Section -->
+    <section class="bg-primary text-white mb-0" id="dados">
+
+
+        <div class="col-lg-12">
+            <table class="table">
+              <thead>
+              <tr>
+                <td>ID</td>
+                <td>NOME</td>
+                <td>DATA</td>
+                <td>CPF</td>
+                <td>SEXO</td>
+                <td>ENDEREÇO</td>
+                
+                </tr>
+              <tbody id="tabela">
+              </tbody>
+            </thead>
+            </table>
+          </div>
+ 
+      </section>
+
+    <section class="portfolio" id="relatorio">
+        <div class="container">
+            <h2 class="text-center text-uppercase text-black">Relatório</h2>
+                <div class="text-center mt-4">
+              <a class="btn btn-xl btn-outline-dark" href="#">
+                <i class="fa fa-download mr-2"></i>
+                Download Relatório
+              </a>
+            </div>
+          </div>
+                 
+    </section>
+  
+    <div class="copyright py-4 text-center text-white">
+      <div class="container">
+        <small>Desenvolvido por Nicolle Furlan</small>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+
+
+    <!-- Custom scripts for this template -->
+    <script text="text/javascript" src="js/freelancer.min.js"></script>
+
+  </body>
+
+</html>
